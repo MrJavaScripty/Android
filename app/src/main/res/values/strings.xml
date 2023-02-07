@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Week2</string>
+    <string name="generator_btn_label">Generate Number</string>
+</resources>
