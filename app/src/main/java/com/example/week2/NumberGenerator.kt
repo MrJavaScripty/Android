@@ -6,6 +6,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 
+// https://medium.com/android-dev-hacks/a-kotlin-based-introduction-to-compound-components-on-android-part-1-2d28323b9ef9
 class NumberGenerator
     @JvmOverloads
     constructor(ctx: Context, attributeSet: AttributeSet?, defStyleAttr:Int = 0)
