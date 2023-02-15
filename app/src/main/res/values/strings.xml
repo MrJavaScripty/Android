@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Week2</string>
-    <string name="generator_btn_label">Generate Number</string>
+    <string name="app_name">Week3</string>
+    <string name="image_a11y_description">It\' a bloody dog</string>
+    <string name="answer_correct">Correct</string>
+    <string name="answer_wrong">Wrong</string>
+    <string name="question">Which image is the %1s ?</string>
 </resources>
