@@ -6,7 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/score_tf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        tools:text="Score: 0"/>
 
-
+    <GridLayout
+        android:id="@+id/button_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_tf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:flow_horizontalAlign="center"
+        tools:columnCount="5"
+        tools:rowCount="5"
+        android:foregroundGravity="center">
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

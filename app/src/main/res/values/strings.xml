@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Week4</string>
+    <string name="score_text">Score: %1$d</string>
 </resources>
