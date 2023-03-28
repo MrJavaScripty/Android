@@ -4,34 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.example.week6.MainActivity">
 
-    <TextView
-        android:id="@+id/score_tf"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textAlignment="textEnd"
-        android:textSize="24sp"
-        android:layout_marginHorizontal="12dp"
-        android:layout_marginTop="12dp"
-        tools:text="Score: 0"/>
-
-    <GridLayout
-        android:id="@+id/button_grid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/score_tf"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:flow_horizontalAlign="center"
-        tools:columnCount="5"
-        tools:rowCount="5"
-        android:foregroundGravity="center">
-    </GridLayout>
+        app:layout_constraintTop_toTopOf="parent">
 
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:labelFor="@id/username" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:importantForAutofill="no"
+            android:inputType="numberPassword"
+            android:labelFor="@id/username" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@id/password"
+            app:layout_constraintTop_toBottomOf="@id/username" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/displayDataBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/display"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Space android:layout_width="24dp" android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

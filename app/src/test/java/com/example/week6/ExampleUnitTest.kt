@@ -1,4 +1,4 @@
-package com.example.week4
+package com.example.week6
 
 import org.junit.Test
 
